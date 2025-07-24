@@ -1,18 +1,14 @@
-import { useContext } from "react";
-import ThemeContext from "./context/themeContext";
+import GitHubUserSearch from "./components/githubUserSearch";
 
-const App = () => {
-  const { theme, toggleTheme } = useContext(ThemeContext);
+function App() {
   return (
     <div>
-      <div className="bg-background-color text-text-color inline mr-10">
-        {theme}
-      </div>
-      <button className="bg-green-400 text-red-600" onClick={toggleTheme}>
-        click me
-      </button>
+      <h1 className="text-center text-2xl font-bold mt-4">
+        GitHub User Search
+      </h1>
+      <GitHubUserSearch />
     </div>
   );
-};
+}
 
 export default App;

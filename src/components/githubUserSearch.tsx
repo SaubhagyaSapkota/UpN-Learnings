@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
+import { useFetch } from "../hook/githubHook";
 
 interface GitHubUser {
   login: string;
@@ -8,39 +9,24 @@ interface GitHubUser {
 
 const GitHubUserSearch = () => {
   const [query, setQuery] = useState("");
-  const [users, setUsers] = useState<GitHubUser[]>([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState("");
+  const [searchUrl, setSearchUrl] = useState("");
   const [searched, setSearched] = useState(false);
 
+  const { data, loading, error, refetch } = useFetch<{ items: GitHubUser[] }>(
+    searchUrl,
+    undefined,
+    false
+  );
 
-  const handleSearch = async (e: React.FormEvent) => {
+  const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     if (!query.trim()) return;
 
+    const url = `https://api.github.com/search/users?q=${query}`;
+    setSearchUrl(url);
+    refetch();
     setSearched(true);
-    setLoading(true);
-    setError("");
-    setUsers([]);
-
-    try {
-      const res = await fetch(`https://api.github.com/search/users?q=${query}`);
-      if (!res.ok) throw new Error("GitHub API error");
-
-      const data = await res.json();
-      setUsers(data.items);
-    } catch (err) {
-      setError("Failed to fetch users");
-    } finally {
-      setLoading(false);
-    }
   };
-  useEffect(() => {
-    if(query.trim() === ""){
-        setUsers([]);
-        setSearched(false);
-    }
-  },[query])
 
   return (
     <div className="max-w-xl mx-auto p-4">
@@ -61,7 +47,7 @@ const GitHubUserSearch = () => {
       {error && <p className="text-red-500">{error}</p>}
 
       <ul className="space-y-4">
-        {users.map((user) => (
+        {data?.items.map((user) => (
           <li
             key={user.login}
             className="flex items-center space-x-4 border p-2 rounded"
@@ -85,7 +71,7 @@ const GitHubUserSearch = () => {
           </li>
         ))}
       </ul>
-      {searched && !loading && users.length === 0 && !error && (
+      {searched && !loading && data?.items.length === 0 && !error && (
         <p className="text-red-500 mt-4">No users found.</p>
       )}
     </div>

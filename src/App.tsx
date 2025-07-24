@@ -1,4 +1,3 @@
-// src/App.tsx
 import GitHubUserSearch from "./components/githubUserSearch";
 
 function App() {

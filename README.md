@@ -38,3 +38,6 @@ This repository consists of topics learned and works done at Upachaar Nepal as a
 
 **React Suspence**
 - A react components used to wrap lazy-loaded components and show a fallback UI while the component is being loaded.
+
+## Task Done (2025-07-25)
+- Login page created using react-hook-form with zod validation.

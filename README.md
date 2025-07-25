@@ -25,3 +25,16 @@ This repository consists of topics learned and works done at Upachaar Nepal as a
 - Created a component for searching Github users.
 - Fetched user example:
 ![github Search](./public/github_Search.png)
+
+## Topic Learned on (2025-07-25)
+
+**Code Splitting**
+- A technique for breaking JavaScript code in smaller chunks which can be loaded on demand.
+- React supports code splitting through dynamic import() and React.lazy.
+
+**Lazy Loading**
+- It is a way to load components only when they are needed.
+- It reduces initial bundle size.
+
+**React Suspence**
+- A react components used to wrap lazy-loaded components and show a fallback UI while the component is being loaded.

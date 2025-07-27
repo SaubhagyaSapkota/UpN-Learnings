@@ -2,6 +2,26 @@
 
 This repository consists of topics learned and works done at Upachaar Nepal as a Software Developer Intern.
 
+## Topic Learned on (2025-07-27)
+
+**React Query (TanStack Query)**
+- A JavaScript library for managing server state in React apps.
+- Used for data fetching, caching, sunchronization and updating server-side data.
+
+**QueryClientProvider**
+- A container that sets up React Query in apps.
+- It handles all queries and mutations. 
+
+**useQuery**
+- Used to Fetch data (like GET request).
+
+**useMutation**
+- Used for changing data (like POST, PUT, DELETE)
+
+## Task Done (2025-07-27)
+- Created form to register and login users.
+- Connected frontend and backend, and data were sent and received through REST-APIs.
+
 ## Topic Learned on (2025-07-25)
 
 **Code Splitting**

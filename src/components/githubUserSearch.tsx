@@ -79,3 +79,11 @@ const GitHubUserSearch = () => {
 };
 
 export default GitHubUserSearch;
+
+
+
+// in app.tsx 
+{/* <div>
+  <h1 className="text-center text-2xl font-bold mt-4">GitHub User Search</h1>
+  <GitHubUserSearch />
+</div>; */}

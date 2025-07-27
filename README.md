@@ -17,11 +17,9 @@ This repository consists of topics learned and works done at Upachaar Nepal as a
 
 ## Task Done (2025-07-25)
 - Created a login page using react hook form.
-- Login Page:
-![Login page](./public/loginForm.png)
+![github Search](./public/loginForm.png)
 
-
-## Topic Learned on (2025-07-24) 
+## Topic Learned on (2025-07-24)
 
 **useMemo hook in React**
 - It caches a computed value so it's not recalcualted on every render unless dependencies change.
@@ -33,7 +31,7 @@ This repository consists of topics learned and works done at Upachaar Nepal as a
 - Reusable functions that use React hooks (useState, useEffect, etc) inside them.
 - Helps in Encapsulate logic, reuse code across components.
 
-**Error Boundaries**
+**Error Boundaries** 
 - A component that catches JavaScript errors in its child components tree, and logs those errors.
 - And display a fallback UI instead of crashing the whole app.
 
@@ -43,4 +41,6 @@ This repository consists of topics learned and works done at Upachaar Nepal as a
 ![github Search](./public/github_Search.png)
 
 ## Topic Learned on (2025-07-23)
+
+**useContext hook in React** 
 - Helps to consume values from a React Context directly, without needing to pass props manually through every component level.

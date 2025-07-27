@@ -7,14 +7,14 @@ import { zodResolver } from "@hookform/resolvers/zod";
 
 const loginZodSchema = z.object({
   name: z.string().min(3, "naam xoto bhayo"),
+  email: z.string(),
   password: z.string(),
-  address: z.string(),
 });
 
 type inputs = {
   name: string;
   password: string;
-  address: string;
+  email: string;
 };
 const Form = () => {
   const {
@@ -47,6 +47,20 @@ const Form = () => {
           />
           {errors.name && <p className="text-red-400">{errors.name.message}</p>}
 
+          <label htmlFor="email">Email:</label>
+          <input
+            className="bg-cyan-200 p-2 rounded"
+            id="email"
+            placeholder="Enter email..."
+            type="email"
+            {...register("email", {
+              required: { message: "Email is required", value: true },
+            })}
+          />
+          {errors.email && (
+            <p className="text-red-400">{errors.email.message}</p>
+          )}
+
           <label htmlFor="password">Password:</label>
           <input
             className="bg-cyan-200 p-2 rounded"
@@ -59,20 +73,6 @@ const Form = () => {
           />
           {errors.password && (
             <p className="text-red-400">{errors.password.message}</p>
-          )}
-
-          <label htmlFor="address">Address:</label>
-          <input
-            className="bg-cyan-200 p-2 rounded"
-            id="address"
-            placeholder="Enter address..."
-            type="text"
-            {...register("address", {
-              required: { message: "Address is required", value: true },
-            })}
-          />
-          {errors.address && (
-            <p className="text-red-400">{errors.address.message}</p>
           )}
 
           <button

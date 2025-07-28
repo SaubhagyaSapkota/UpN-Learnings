@@ -1,9 +1,9 @@
-import Form from "./components/rhookForm";
+import FormRedux from "./components/formRedux";
 
 function App() {
   return (
     <div>
-      <Form/>
+      <FormRedux/>
     </div>
   );
 }

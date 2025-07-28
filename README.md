@@ -2,6 +2,23 @@
 
 This repository consists of topics learned and works done at Upachaar Nepal as a Software Developer Intern.
 
+## Topic Learned on (2025-07-28)
+
+**Redux**
+- A state management library for JS applications.
+- Lets store, update and manage application's global state in a single place, making easier to share data across components.
+
+**Redux Toolkits**
+- Creating the store
+- Writing reducers and actions
+- Handling async logic
+- Reducing boilerplate code
+
+## Task Done (2025-07-28)
+- Created a Form the stores user's details and display it below using redux toolkit.
+![redux Form](./public/reduxForm.png)
+![redux Form result](./public/reduxFormResult.png)
+
 ## Topic Learned on (2025-07-27)
 
 **React Query (TanStack Query)**
@@ -37,7 +54,7 @@ This repository consists of topics learned and works done at Upachaar Nepal as a
 
 ## Task Done (2025-07-25)
 - Created a login page using react hook form.
-![github Search](./public/loginForm.png)
+![Login Page](./public/loginForm.png)
 
 ## Topic Learned on (2025-07-24)
 

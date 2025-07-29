@@ -1,0 +1,10 @@
+joke 1
+joke 2
+joke 3
+joke 4
+joke 5
+joke 6
+joke 7
+joke 8
+joke 9
+joke 10

@@ -2,6 +2,17 @@
 
 This repository consists of topics learned and works done at Upachaar Nepal as a Software Developer Intern.
 
+## Topic Learned on (2025-07-29)
+**Basics of nodeJS**
+- File System modules
+- Url Modules
+- nodeJS server
+
+## Task done on (2025-07-29)
+- Read files synchronously and asynchronously.
+- Used url modules to parse a request path, a headers, a payload and a query.
+- Read about cerateReadStream.
+
 ## Topic Learned on (2025-07-28)
 
 **Redux**
@@ -16,8 +27,8 @@ This repository consists of topics learned and works done at Upachaar Nepal as a
 
 ## Task Done (2025-07-28)
 - Created a Form the stores user's details and display it below using redux toolkit.
-![redux Form](./public/reduxForm.png)
-![redux Form result](./public/reduxFormResult.png)
+![redux Form](./images/reduxForm.png)
+![redux Form result](./images/reduxFormResult.png)
 
 ## Topic Learned on (2025-07-27)
 
@@ -54,7 +65,7 @@ This repository consists of topics learned and works done at Upachaar Nepal as a
 
 ## Task Done (2025-07-25)
 - Created a login page using react hook form.
-![Login Page](./public/loginForm.png)
+![Login Page](./images/loginForm.png)
 
 ## Topic Learned on (2025-07-24)
 
@@ -75,7 +86,7 @@ This repository consists of topics learned and works done at Upachaar Nepal as a
 ## Task Done (2025-07-24)
 - Created a component for searching Github users.
 - Fetched user example:
-![github Search](./public/github_Search.png)
+![github Search](./images/github_Search.png)
 
 ## Topic Learned on (2025-07-23)
 

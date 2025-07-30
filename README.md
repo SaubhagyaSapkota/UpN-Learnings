@@ -2,6 +2,12 @@
 
 This repository consists of topics learned and works done at Upachaar Nepal as a Software Developer Intern.
 
+## Topic Learned on (2025-07-30)
+- Routing in NodeJS without express.
+
+## Task done on (2025-07-29)
+- Write, Read, Append, Delete, Update, Close a file using File System modules.
+
 ## Topic Learned on (2025-07-29)
 **Basics of nodeJS**
 - File System modules

@@ -2,6 +2,14 @@
 
 This repository consists of topics learned and works done at Upachaar Nepal as a Software Developer Intern.
 
+## Topic Learned on (2025-07-31)
+- Creating HTTP and HTTPs servers.
+- Learned about SSL certificates and private key for HTTPS.
+- Learned about user data management using fs system in nodeJS.
+
+## Task done on (2025-07-31)
+- Practiced all the code learned.
+
 ## Topic Learned on (2025-07-30)
 - Routing in NodeJS without express.
 
